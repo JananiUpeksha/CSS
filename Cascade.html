@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade</title>
+    <style>
+        .custom-btn{ /*class selector - 0,0,1,0*/
+            color: burlywood;
+        }
+
+        button{ /*Type selector - 0,0,0,1*/
+            color: darkmagenta;
+        }
+
+        *{ /*Universal selector - 0,0,0,0*/
+            color: yellow;
+        }
+
+        #btn { /*Id selector = 0,1,0,0*/
+            color: aqua;
+        }
+
+        [name] {
+            color: green;
+        }
+        .h3class{
+            color: blueviolet;
+        }
+
+
+        h1.h3class[name]{
+        /*.h1class = 0,0,1,0 [name] = 0,0,1,0
+        .h1class + [name] = 0,0,2,0* meka thma apply wenne mkd meke value eka okkotma wda wdi/*/
+        color: deeppink;
+    }
+
+    .h1class{
+        color: blue;
+    }
+
+</style>
+</head>
+<body>
+<button id="btn" class="custom-btn" style="color: red"> <!--Inline CSS - 1,0,0,0-->
+    Click Here!
+</button>
+
+<h1 class="h3class" name="hello">Hello!</h1>
+<h1 class="h1class">Welcome</h1> <!--universal selector-->
+<h1>Hii!</h1>
+
+</body>
+</html>
