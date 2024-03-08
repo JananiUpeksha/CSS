@@ -5,89 +5,81 @@
     <title>CSS</title>
     <link rel="stylesheet" href="style.css"> <!--external resource eka genalla link krmwa at import kiyla ekak thiynwa impor krgnna eth eka wdiya wda na-->
     <link rel="stylesheet" href="assets/normalize.css"> <!--browsers wlin ena css ain wenwa ethkota ara scroll wena eka ain wenwa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
-     /*#mydiv1{
-         background-color: crimson;
-         width: 100px;
-         height: 300px;
-     }*/
+        /*div{
+            width: 400px;
+            aspect-ratio: 1/1;
+            !*background-color:#b768d4 ; hex colour codes*!
+            !*000000=black ffffff=white*!
+            !*background-color: rgb(183, 104, 212);*!
+           !* background-color: rgba(183, 104, 212, 0.5 );*! !*values 4k ywnna one wdima agya 1 agya adu krnna krnna opasity> wenwa dashma gnan kiynne winiwida penna gnnwa*!
+            !*background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 68%,#7db9e8 100%);*!
+            background: linear-gradient(to right,orange ,deeppink);
 
-     #mydiv1{
-         /*view port eka kiynne apita display wena view eka view port eke size ekta response krnwa window eke size wens weddi wens wenwa*/
-         background-color: crimson;
-         width: 100vw; /*sampurna view port eke width size ekem 50%i gnne*/
-         height: 100vh;
-     }
-     p{
-         /*font-size: 80px; px wldi eya eyge font size eken innwa parent care krn na*/
+            !*font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            text-transform: capitalize;
+            font-style: italic;
+            text-shadow: 2px 2px purple; !*(x,y)*!*!
+            font-family: "Lato", sans-serif; !*one web browser ekaka support krnwa mul eka load wen nththn eya anith font eka try krnwa apita thwa one thrn font ehema dila thiynna pluwn*!
+        }*/
+        /*div{
+            width: 400px;
+            aspect-ratio: 1/1;
+            background-color: plum;
+            !*clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%) shapes gnna*!
+            background-image: url("assets/p4.jpeg");
+            background-repeat: no-repeat; !*image eka podi nm eka repeat wena eka nwaththnwa*!
+            background-size: contain;!*hriyta pluwn tika cover krnwa*! !*cover; ratio care krn na khma hri fit krnwa withri*!
 
-         /*font-size: 1em;*/ /* 1em = 1x 250 = 250px mona measurement eken dunnath eya eka px wlta convert krgnnwa eya parentge font size ekta thma listen krnne */
-         /*font-size: 2em; 2em = 2x 250 = 500px  font-size: 3em = 3x250 = 750px */
-         /*if parent do not have value, the it ask from root element(html- default fsize - 16) and multiple p's value 1 x ? = 16px*/
 
-         font-size: 1rem; /*nearest parentge font size eka meyta adla na meya kelinma ghin ahnne root element eken*/
-     }
-    /* section{
-         font-size: 250px;
-     }*/
+        }*/
+        div{
+            background-color: lightgray;
+            display: flex; /*flex dunnama inner dev eke  eka polimta enwa outer div eka inner divsize ekta enwa nththn mulu screen ekama gray wenwa*/
+            /*flex-direction: column;*/ /*irection eka colunm wdihta thiyenne bydefault enne row wdiht*/
+            /*flex-direction: row-reverse; thiyna wdiha reverse wenwa*/
+            /*flex-direction: column-reverse;*/
+            justify-content: space-between /*center*/ /*space-around*/ /*flex-end*/ /*flex-start*/;
+            height: 500px;/*parentge hight ekama div>divth gnnwa eyge height eka ignore krnwa height nththn childge content size eka gnne */
+        }
+        div>div{
+            width: 150px;
+            aspect-ratio: 1/1;
+            border: 1px solid black;
+        }
+        div>div:first-child{
+           background-color: plum;
+        }
+        div>div:nth-child(2){
+            background-color: orange;
+        }
+        div>div:nth-child(3){
+            background-color: deepskyblue;
+        }
 
-     #mydiv2{
-         width: 1000px;
-         height: 400px;
-         border: 2px solid red;
-     }
-     /*Parent lga value naththn weight height ewa pennan na root eken gnna pluwn font value withri % mark ekta eka wda krn na*/
-     #mydiv2>div{
-         width: 50%;
-         height: 50%;
-         background-color: lightblue;
-     }
-
-     #mtdiv3{
-         font-size: 50%; /*16x50/100 = 8px*/
-     }
-
-     #mydiv4{
-         font-size: 300px;
-     }
-     #mydiv5{
-         font-size: 50%; /*mydiv5 inne mydiv4 ge athule eya parentge size eken 50%k thama gnne*/
-     }
     </style>
 </head>
 <body>
-   <!-- <div id="mydiv1"></div>-->
-    <section>
-        <p>
-            Hello
-        </p>
-    </section>
-
-    <section>
-        <main>
-            <p>Hii</p>
-        </main>
-        <!--api mainta font size ekak dila na ethkota p awilla maingen ahuwama main denne eyge parent section eke font value eka- nearest parent ghin ghin lgma kenagen illagnnwa-->
-        <!--section lgath thibbe nththn 32px awilla kiyla pennanwa e liynne kohen hri 16 awilla thiynwa eka ape p ge font size eka  1 em x 16 = 16px meya me 16 gnne root element e kiynne htmlgen-->
-    </section>
-
-    <section>
-        <main>
-            <p>Welcome</p>
-        </main>
-    </section>
-
-    <div id="mydiv2">
-        <div></div>
+<section>
+    <!--<div>IJSE <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cumque dolor doloremque eligendi fuga magnam minima molestias nesciunt,
+        obcaecati perspiciatis possimus quisquam quod rem repellendus reprehenderit suscipit temporibus vitae?
+    </div>-->
+    <div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
     </div>
 
-    <div id="mtdiv3">
-        Hello World
-    </div>
 
-    <div id="mydiv4">
-        <div id="mydiv5">IJSE</div>
-    </div>
-
+</section>
 </body>
 </html>

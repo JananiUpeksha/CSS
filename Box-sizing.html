@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BoxSizing</title>
+    <style>
+        #div1{
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+
+            background-color: lightblue;
+            border: 10px solid blue;
+            box-sizing: border-box; /*content box ekath ekka, padding, border okkoma ekka thma w500px h300px*/
+
+        }
+        #div2{
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+
+            background-color: lightpink;
+            border: 10px solid deeppink;
+            box-sizing: content-box; /*meka default ena eka meke content box eka withri w500px h300px eka padding border ekka eddi ita wda loku wenwa*/
+        }
+
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+
+</body>
+</html>

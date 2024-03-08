@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--<html lang="en" &lt;!&ndash;style="font-size: 20px&ndash;&gt;"> APi methna root eke font size eka wdi kra ethkota defult pennanne 16 nmei 20-->
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css"> <!--external resource eka genalla link krmwa at import kiyla ekak thiynwa impor krgnna eth eka wdiya wda na-->
+    <link rel="stylesheet" href="assets/normalize.css"> <!--browsers wlin ena css ain wenwa ethkota ara scroll wena eka ain wenwa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            overflow: hidden;
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        header {
+            background-color: lightblue;
+            position: relative;
+            width: 100vw;
+            height: 60px;
+            /*padding: 10px;
+            box-sizing: border-box; px size eka hduwama meka one na*/
+        }
+
+        header>img {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            bottom: 0;
+            margin: auto;
+        }
+
+        header>nav {
+            height: fit-content;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        header>nav>ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        header>nav>ul>li {
+            display: inline-block;
+        }
+        footer{
+            background-color: darkgray;
+            text-align: center;
+            color: white;
+            /*padding-top: 20px;
+            padding-bottom: 20px;*/
+            padding: 20px 0px; /*<top-bottom> <left-right>*/
+
+        }
+        main{
+            position: relative;
+        }
+        main>aside{
+            background-color: plum;
+            color: white;
+            padding: 10px;
+            width: 170px;
+            position: absolute;
+            box-sizing: border-box;
+            /*aside eka digtma gnna*/
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        main>aside>ul{
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+        main>section{
+            background-color: lightgoldenrodyellow;
+            width: calc(100vw - 170px); /*full view width ekem aside eka adu krnwa*/
+            margin-left: 170px;
+            /*position: absolute;
+            right: 0; meka thibboth footer ek pen nathuwa ynwa*/
+        }
+        /*main>section>p{
+            div wenuwata p dmmoth default ena margin ekak thiynwa eka ain krnna
+            margin: 0px;
+        }*/
+        section>div>{
+            position: relative;
+            height: 150px;
+        }
+        section>div>div{
+            width: calc(100%/3);
+            height: 150px;
+            background: red;
+            position: absolute;
+        }
+        section>div>div:first-child{
+            background: deeppink;
+        }
+        section>div>div:last-child{}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="assets/ijse-removebg-preview.png " title="Logo" alt="Logo"width="150" height="50">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+
+</header>
+<main>
+    <!--side bar-->
+    <aside>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Contacts</li>
+        </ul>
+    </aside>
+    <!--content-->
+    <section>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum expedita ipsum molestiae non praesentium quae quod repellendus!
+            Amet dolore eligendi illum minus nemo nobis, non quam suscipit unde voluptatem.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur, corporis cumque deserunt ex fuga in iste itaque maxime,
+            nostrum nulla perferendis quae quo rem vero! Ab consequatur illum vel.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus esse excepturi iusto reprehenderit. Earum eius eligendi est et optio,
+            rem repellat soluta. Explicabo, harum, laboriosam. Eum hic placeat quae.
+        </div><div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum expedita ipsum molestiae non praesentium quae quod repellendus!
+        Amet dolore eligendi illum minus nemo nobis, non quam suscipit unde voluptatem.
+    </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur, corporis cumque deserunt ex fuga in iste itaque maxime,
+            nostrum nulla perferendis quae quo rem vero! Ab consequatur illum vel.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus esse excepturi iusto reprehenderit. Earum eius eligendi est et optio,
+            rem repellat soluta. Explicabo, harum, laboriosam. Eum hic placeat quae.
+        </div><div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum expedita ipsum molestiae non praesentium quae quod repellendus!
+        Amet dolore eligendi illum minus nemo nobis, non quam suscipit unde voluptatem.
+    </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur, corporis cumque deserunt ex fuga in iste itaque maxime,
+            nostrum nulla perferendis quae quo rem vero! Ab consequatur illum vel.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus esse excepturi iusto reprehenderit. Earum eius eligendi est et optio,
+            rem repellat soluta. Explicabo, harum, laboriosam. Eum hic placeat quae.
+        </div><div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum expedita ipsum molestiae non praesentium quae quod repellendus!
+        Amet dolore eligendi illum minus nemo nobis, non quam suscipit unde voluptatem.
+    </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur, corporis cumque deserunt ex fuga in iste itaque maxime,
+            nostrum nulla perferendis quae quo rem vero! Ab consequatur illum vel.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus esse excepturi iusto reprehenderit. Earum eius eligendi est et optio,
+            rem repellat soluta. Explicabo, harum, laboriosam. Eum hic placeat quae.
+        </div>
+    </section>
+</main>
+
+<footer>Developed By IJSE
+</footer>
+</body>
+</html>

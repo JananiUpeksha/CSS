@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--<html lang="en" &lt;!&ndash;style="font-size: 20px&ndash;&gt;"> APi methna root eke font size eka wdi kra ethkota defult pennanne 16 nmei 20-->
+<head>
+  <meta charset="UTF-8">
+  <title>CSS</title>
+  <link rel="stylesheet" href="style.css"> <!--external resource eka genalla link krmwa at import kiyla ekak thiynwa impor krgnna eth eka wdiya wda na-->
+  <link rel="stylesheet" href="assets/normalize.css"> <!--browsers wlin ena css ain wenwa ethkota ara scroll wena eka ain wenwa-->
+  <style>
+    body{
+      overflow: hidden;
+    }
+
+    section{
+      width: 100vw;
+      height: 100vh;
+      border: 3px solid black;
+      position: relative;
+    }
+
+    #div1 {
+      width: 50%;
+      height: 50%;
+      background-color: yellowgreen;
+      position: absolute;
+      right: 0;
+
+    }
+    #div2 {
+      width: 50%;
+      height: 50%;
+      background-color: red;
+      position: absolute;
+
+    }
+    #div3 {
+      width: 50%;
+      height: 50%;
+      background-color: orange;
+      position: absolute;
+      bottom: 0;
+    }
+    #div4 {
+      width: 50%;
+      height: 50%;
+      background-color: deeppink;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    #center{
+      width: 250px;
+      height: 250px;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+    }
+    #circle{
+      width: 150px;
+      aspect-ratio: 1/1;
+      background-color: red;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+    }
+    #c1 {
+      width: 250px;
+      aspect-ratio: 1/1;
+      background-color: white;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+    }
+    #c2{
+
+      width: 250px;
+      aspect-ratio: 1/1;
+      background-color: white;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+
+    }
+
+    #c3{
+
+      width: 250px;
+      aspect-ratio: 1/1;
+      background-color: white;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+
+    }
+    #c4{
+
+      width: 250px;
+      aspect-ratio: 1/1;
+      background-color: white;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+
+    }
+    #s1{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+
+    }
+    #s2{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+
+    }
+    #s3{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+
+    }
+    #s4{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+
+    }
+    .hc1{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: rotate(270deg);
+      background-color: white;
+      border-top-right-radius: 100%;
+    }
+    .qc1{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: white;
+      border-top-right-radius: 100%;
+    }
+
+    .hc2{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      /*top: 0;*/
+      transform: rotate(270deg);
+      background-color: white;
+      border-bottom-left-radius: 100%;
+    }
+    .qc2{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: white;
+      border-bottom-left-radius: 100%;
+    }
+    .hc3{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: rotate(90deg);
+      background-color: white;
+      border-bottom-right-radius: 100%;
+
+    }
+    .qc3{
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-bottom-right-radius: 100%;
+    }
+    .hc4{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: rotate(90deg);
+      background-color: white;
+      border-top-left-radius: 100%;
+    }
+    .qc4{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      border-top-left-radius: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+<section>
+  <div id="div1"><!--green-->
+    <div class="qc2"></div>
+    <div class="hc2"></div>
+    <div id="c1">
+      <div id="s1"></div>
+    </div>
+  </div>
+
+  <div id="div2"><!--red-->
+    <div class="qc3"></div>
+    <div class="hc3"></div>
+    <div id="c2">
+      <div id="s2"></div>
+    </div>
+  </div>
+
+  <div id="div3"><!--orange-->
+    <div class="qc1"></div>
+    <div class="hc1"></div>
+    <div id="c3">
+      <div id="s3"></div>
+    </div>
+  </div>
+
+  <div id="div4"><!--rose-->
+    <div class="qc4"></div>
+    <div class="hc4"></div>
+    <div id="c4">
+      <div id="s4"></div>
+    </div>
+  </div>
+
+  <div id="center">
+    <div id="circle"></div>
+  </div>
+
+</section>
+
+</body>
+</html>

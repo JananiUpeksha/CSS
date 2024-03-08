@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute Positioning</title>
+    <style>
+        /*positions type
+            01.Static
+            02.Relative
+            03.Fixed
+            04.Absolute
+            05.Static*/
+
+        /*Absolute - Parentta anuwa position krnna one */
+        section{
+            width: 1000px;
+            height: 500px;
+            border: 3px solid mediumpurple;
+            position: relative; /*parentwa qualify krnwa absolute child knek thiyagnna pluwn wenna, relationalma wenna one na khma hri position krnna one*/
+        }
+        /*  #div1 {
+
+              !*Center krnna one nm*!
+              width: 100px;
+              aspect-ratio: 1/1;
+              background-color: salmon;
+              position: absolute;
+
+              right: 0;
+              bottom: 0;
+              left: 0;
+              top: 0;
+              margin: auto;
+          }*/
+        #div1 {
+            width: 50%;
+            height: 50%;
+            background-color: plum;
+            position: absolute;
+            right: 0;
+
+        }
+        #div2 {
+            width: 50%;
+            height: 50%;
+            background-color: salmon;
+            position: absolute;
+
+        }
+        #div3 {
+            width: 500px;
+            height: 250px;
+            /*aspect-ratio: 1/1;*/
+            background-color: blue;
+            position: absolute;
+            bottom: 0;
+        }
+        #div4 {
+            width: 500px;
+            height: 250px;
+            /*aspect-ratio: 1/1;*/
+            background-color: rosybrown;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <!--<div id="center"></div>-->
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+
+</section>
+
+</body>
+</html>
