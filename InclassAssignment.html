@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>inclass03/09</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        section{
+            height: 400px;
+            border: orange 3px solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            /*box-shadow: 5px 5px 5px 5px lightpink;*/
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        div:first-child{
+            background: plum;
+        }
+        div:nth-child(2){
+            background: coral;
+            align-self: center;
+        }
+        div:nth-child(3){
+            background: deeppink;
+            align-self: end;
+        }
+        div:nth-child(4){
+            background: salmon;
+            align-self: center;
+        }
+        div:nth-child(5){
+            background: dimgray;
+            align-self: start;
+        }
+        div:nth-child(6){
+            background: blueviolet;
+            align-self: center;
+        }
+
+
+
+    </style>
 </head>
+
 <body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
 
 </body>
 </html>

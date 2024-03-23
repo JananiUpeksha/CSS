@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--<html lang="en" &lt;!&ndash;style="font-size: 20px&ndash;&gt;"> APi methna root eke font size eka wdi kra ethkota defult pennanne 16 nmei 20-->
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css"> <!--external resource eka genalla link krmwa at import kiyla ekak thiynwa impor krgnna eth eka wdiya wda na-->
+    <link rel="stylesheet" href="assets/normalize.css"> <!--browsers wlin ena css ain wenwa ethkota ara scroll wena eka ain wenwa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        div{
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: red;
+        }
+
+        /*()denne condition ekak wge max width eka 800px unaama backcolor eka blue wenna css file eke anthimta loynne*/
+        /*@media all and (max-width: 1000px) and (min-width: 800px){!*athara 1000 and between 800*!
+            div{ !*and max with ekta klin apply wenne nil paata max width dunnama rathu eth screene eka podi krddi nil ai loku krddi rathu*!
+                background-color: #8fb1d3;
+            }
+        }*/
+        @media all and (max-width: 1000px) {
+            div{background-color: #8fb1d3;}
+        }
+        @media all and (max-width: 800px) {
+            div{background-color: salmon;}
+        }
+        @media all and (max-width: 600px) {
+            div{background-color: hotpink;}
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
